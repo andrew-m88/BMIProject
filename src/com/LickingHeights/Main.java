@@ -9,8 +9,8 @@ public class Main {
         int weight,height;
         String name;
         double BMI;
-        double ITM;
-        double PTK;
+        double InchesToMeters;
+        double PoundsToKilograms;
 
 
         Scanner keyboard;
@@ -22,11 +22,11 @@ public class Main {
         weight = keyboard.nextInt();
         System.out.println("what is your height (only inches)?");
         height= keyboard.nextInt();
-        ITM = height *(0.0254/1);
-        System.out.println("your height from inches to meters is "+ITM+"m");
-        PTK = weight *(0.453592/1);
-        System.out.println("your yor weight from pounds to kilograms is "+PTK+"kg");
-        BMI = PTK/ (ITM*ITM);
+        InchesToMeters = height *(0.0254/1);
+        System.out.println("your height from inches to meters is "+InchesToMeters+"m");
+        PoundsToKilograms = weight *(0.453592/1);
+        System.out.println("your yor weight from pounds to kilograms is "+PoundsToKilograms+"kg");
+        BMI = PoundsToKilograms/ (InchesToMeters*InchesToMeters);
         System.out.println("your BMI is "+BMI);
 
 
